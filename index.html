@@ -1,9 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-    <title></title>
+    <script src="scripts/modernizr.js"></script>
+    <script src="scripts/loader.js"></script>
+    <link rel="stylesheet" href="styles/fontfaces.css"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Balloon Monkey</title>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/mobile.css"
+          media="screen and (max-device-width:768px) and (orientation:portrait),
+                screen and (max-device-width:1024px) and (orientation:landscape)"/>
+    <meta name="description" content="" />
+    <meta name="author" content="igonzalez" />
+    <meta charset=UTF-8>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon-precomposed" href="images/ios-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ios-icon-ipad.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ios-icon-iphone4.png" />
+    <link rel="apple-touch-startup-image" href="images/ios-startup-748x1024.png"
+          media="screen and (min-device-width:768px) and (orientation:landscape)"/>
+    <link rel="apple-touch-startup-image" href="images/ios-startup-768x1004.png"
+          media="screen and (min-device-width:768px) and (orientation:portrait)"/>
+    <link rel="apple-touch-startup-image" href="images/ios-startup-320x460.png"
+          media="screen and (max-device-width:320px)"/>
 </head>
+
 <body>
 
+<div id="game">
+    <div class="screen" id="splash-screen">
+        <h1 class="logo">
+            Balloon<br/>
+            Monkey</h1>
+        <span class="continue">Click to continue</span>
+    </div>
+
+
+    <div class="screen" id="main-menu">
+        <h2 class="logo">Balloon <br/>Monkey</h2>
+        <ul class="menu">
+            <li><button name="game-screen">Play</button>
+            <li><button name="hiscore">Highscore</button>
+            <li><button name="about">About</button>
+            <li><button name="exit-screen">Exit</button>
+        </ul>
+    </div>
+
+    <div class="screen" id="game-screen"></div>
+
+    <div class="screen" id="high-scores"></div>
+
+    <div class="screen" id="install-screen">
+        <h1 class="logo">
+            Balloon<br/>
+            Monkey</h1>
+                    <span class="continue">Click the <img src="images/install-icon.png" alt="install icon"/>
+                        button to install the game to your home screen</span>
+    </div>
+
+</div>
 </body>
 </html>
